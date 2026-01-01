@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body { 
+	font-family: 'Poppins', sans-serif;
+}	
+
+.navbar {
+	background-color: black;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.navbar ul {
+	display: flex;
+	justify-content: right;
+	list-style: none;
+	padding: 10px 25px;
+}
+
+.navbar ul li {
+	margin: 0 15px;
+}
+
+.navbar ul li a {
+	color: white;
+	text-decoration: transparent;
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+
+/* hover ke-1 */
+.navbar ul li a:hover {
+	color: gray;
+	box-shadow: 0 0 15px white;
+	transition: 0.3s all ease-in-out;
+	border-bottom: 2px solid gray;
+}	
+
+section {
+	padding: 100px;
+	text-align: center;
+}	
+
+.home-content {
+	display: flex;
+	flex-direction: column;
+	background-color: gray;
+	gap: 1rem;
+}
+
+.social-icons a{
+	width: 4rem;
+	height: 4rem;
+	margin: auto;
+	background-color: transparent;
+	border: 0.1rem solid white;
+	border-radius: 50px;
+	font-size: 2rem;
+	color: black;
+	padding: 5px;
+}
+
+/* hover ke-2 */
+.social-icons a:hover {
+	background-color: white;
+	color: black;
+	box-shadow: 0 0 25px white;
+	transition: 0.3s;
+		
+}
+h1 {
+	font-weight: 500;
+}
+
+h4 {
+	font-weight: 600;
+	font-size: 2rem;
+}
+
+p {
+	font-weight: 450;
+}
+
+.about-me-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.profil-info {
+	font-size: 25px;
+}
+
+.info {
+	width: 90px;
+	color: gray;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.contact-me-content {
+	max-width: 300px;
+	margin: auto;
+	background-color: gray;
+	border-radius: 10px;
+	padding: 50px;
+	box-shadow: 0 0 5px black;
+}
+
+.contact-me-content input, textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+
+/* hover ke-3 */
+.contact-me-content input:hover {
+	border: 2px solid blue;
+	box-shadow: 0 0 25px white;
+	transition: 0.3s all ease-in-out;
+}
+
+/* hover ke-4*/
+.contact-me-content textarea:hover {
+	border: 2px solid green;
+	box-shadow: 0 0 25px white;
+	transition: 0.3s all ease-in-out;
+}
+
+.btn {
+	padding: 10px;
+	border: transparent;
+	color: white;
+	background-color: black;
+}
+/* hover ke-5 */
+.btn:hover {
+	color: black;
+	background-color: white;
+	transform: scale(1.3) translateY(-2px);
+	cursor: pointer;
+	box-shadow: 0 0 15px white;
+	transition: 0.3s ease;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	background-color: black;
+	padding: 5px;
+	color: white;
+	margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+	.navbar ul {
+		flex-direction: column;
+	}
+}	
